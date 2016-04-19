@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/band_cover_img_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/band_cover_img_view">
+
+        <TextView
+                android:id="@+id/band_key_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12dp"
+                android:textColor="#000000"/>
+
+        <TextView
+                android:id="@+id/band_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/band_key_text_view"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12dp"
+                android:textColor="#000000"/>
+
+        <TextView
+                android:id="@+id/is_guild_band_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/band_name_text_view"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12dp"
+                android:textColor="#000000"/>
+    </RelativeLayout>
+</RelativeLayout>

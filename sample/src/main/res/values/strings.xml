@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BAND SDK Sample</string>
+    <string name="ok_text">OK</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="fail">Fail</string>
+    <string name="is_not_official_band_member">i\'m not Official Band Member</string>
+    <string name="exit_dialog_title">Exit</string>
+    <string name="exit_dialog_description">Are you sure to want to exit the application?</string>
+    <string name="setting">Setting</string>
+    <string name="home">Home</string>
+
+    <!-- title -->
+    <string name="title_main">BAND SDK Sample App</string>
+    <string name="title_member_profile">Member Profile</string>
+    <string name="title_send_message">Send Message</string>
+    <string name="title_write_post">Write Post</string>
+    <string name="title_get_post">Get Post</string>
+    <string name="title_get_notice">Get Notice</string>
+    <string name="title_band_list">Band List</string>
+    <string name="title_member_list">Member List</string>
+    <string name="title_friend_list">Friend List</string>
+    <string name="title_create_guild_band">Create Guild Band</string>
+    <string name="title_guild_band_join">Join Guild Band</string>
+    <string name="title_select_friends">Select Friends</string>
+    <string name="title_setting">Setting</string>
+
+    <!-- main title -->
+    <string name="main_title_account">1. Account</string>
+    <string name="main_title_user">2. User</string>
+    <string name="main_title_friend_list">3. Friends list views</string>
+    <string name="main_title_create_band">4. Create band</string>
+    <string name="main_title_join_band">5. Join band</string>
+    <string name="main_title_band_information">6. Band information</string>
+    <string name="main_title_posts">7. Posts</string>
+    <string name="main_title_messages">8. messages</string>
+    <string name="main_title_open">9. Open</string>
+    <string name="main_title_leave">10. Leave</string>
+
+    <!-- main menu -->
+    <string name="main_menu_my_profile">My profile</string>
+    <string name="main_menu_send_message">Send message</string>
+    <string name="main_menu_write_post">Write post</string>
+    <string name="main_menu_band_list">Band list</string>
+    <string name="main_menu_member_list">Band member list</string>
+    <string name="main_menu_friend_list">Friend list (connected this app)</string>
+    <string name="main_menu_goto_band_app">Move to install band</string>
+    <string name="main_menu_logout">Logout</string>
+    <string name="main_menu_access_token">Get access token</string>
+    <string name="main_menu_quota_info">Quota info</string>
+    <string name="main_menu_disconnect">Disconnect</string>
+    <string name="main_menu_create_guild_band">Create guild band</string>
+    <string name="main_menu_join_official_band">Join official band</string>
+    <string name="main_menu_join_guild_band">Join guild band</string>
+    <string name="main_menu_official_band_information">Official band information</string>
+    <string name="main_menu_official_band_posts">Official band get posts</string>
+    <string name="main_menu_official_band_notices">Official band get notice</string>
+    <string name="main_menu_guild_band_posts">Guild Band get posts</string>
+    <string name="main_menu_guild_band_notices">Guild band get notice</string>
+    <string name="main_menu_goto_band">Goto band</string>
+    <string name="main_menu_goto_chat">Goto band chat room</string>
+    <string name="main_menu_guild_band_leave">Leave guild band</string>
+
+    <!-- send_message.xml -->
+    <string name="send_msg_label_invite_msg">Invite\nMessage</string>
+    <string name="send_msg_label_game_msg">Game\nMessage</string>
+    <string name="send_msg_label_receiver">Receiver</string>
+    <string name="send_msg_label_choose_member">Choose a member</string>
+    <string name="send_msg_label_title">Title</string>
+    <string name="send_msg_hint_title">Write a title here</string>
+    <string name="send_msg_label_msg">Message</string>
+    <string name="send_msg_hint_msg">Write a message here</string>
+    <string name="send_msg_label_send">Send</string>
+    <string name="send_msg_select_type">Select type</string>
+    <string name="send_msg_select_member">Select member</string>
+
+    <!-- write_post.xml -->
+    <string name="write_post_label_setting_default_values">Set default values</string>
+    <string name="write_post_label_band">Band</string>
+    <string name="write_post_label_subpost_title">Sub Title</string>
+    <string name="write_post_label_subpost_content">Sub Content</string>
+    <string name="write_post_label_content">Content</string>
+    <string name="write_post_label_link">Link</string>
+    <string name="write_post_label_image">Image</string>
+    <string name="write_post_label_write_post">Write Post</string>
+    <string name="write_post_hint_band">Choose a Band</string>
+    <string name="write_post_hint_subpost_title">Write subpost title here</string>
+    <string name="write_post_hint_subpost_content">Write subpost content here</string>
+    <string name="write_post_hint_content">Write content here</string>
+    <string name="write_post_hint_link_text">Write link button text here</string>
+    <string name="write_post_hint_ios_url">iOS url host and path</string>
+    <string name="write_post_hint_android_url">android url host and path</string>
+    <string name="write_post_hint_image_url">Write an image url here</string>
+    <string name="write_post_select_band">Select band</string>
+
+    <!-- setting_dialog.xml -->
+    <string name="setting_dialog_btn_splash">Splash</string>
+    <string name="setting_dialog_btn_key_hash_check">Key Hash Check</string>
+
+    <!-- guild_band_create.xml -->
+    <string name="guild_band_create_hint_band_name">Write band name here</string>
+    <string name="guild_band_create_btn">Create Guild Band</string>
+    <string name="guild_band_create_enter_value">Please enter a band name.</string>
+
+    <!-- guild_band_join.xml -->
+    <string name="guild_band_join_label_band_key">Guild Band Key</string>
+    <string name="guild_band_join_label_name">Name</string>
+    <string name="guild_band_join_label_select_profile_image">Select Profile Image</string>
+    <string name="guild_band_join_btn">Join Guild Band</string>
+
+</resources>
