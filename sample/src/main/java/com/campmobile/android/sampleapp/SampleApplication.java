@@ -6,8 +6,10 @@ import com.campmobile.android.bandsdk.BandManager;
 import com.campmobile.android.bandsdk.BandManagerFactory;
 
 public class SampleApplication extends Application {
-	public static final String CLIENT_ID = "changed with your client_id";
-	public static final String CLIENT_SECRET = "changed with your secret_id";
+	public static final String CLIENT_ID = "1";
+	public static final String CLIENT_SECRET = "client_secret_1A2I3swaj";
+//	public static final String CLIENT_ID = "changed with your client_id";
+//	public static final String CLIENT_SECRET = "changed with your secret_id";
 
 	@Override
 	public void onCreate() {

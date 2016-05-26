@@ -11,11 +11,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.VolleyError;
 import com.campmobile.android.bandsdk.BandManager;
 import com.campmobile.android.bandsdk.BandManagerFactory;
 import com.campmobile.android.bandsdk.api.ApiCallbacks;
+import com.campmobile.android.bandsdk.constant.ApiSpecificError;
 import com.campmobile.android.bandsdk.entity.Band;
 import com.campmobile.android.bandsdk.entity.Member;
 import com.campmobile.android.sampleapp.R;
@@ -147,6 +149,21 @@ public class SendMessageActivity extends BaseToolbarActivity {
 				public void onError(VolleyError error) {
 					super.onError(error);
 					showMessage(error.getMessage());
+				}
+
+				@Override
+				public void onApiSpecificResponse(ApiSpecificError apiSpecificError, String message) {
+					switch (apiSpecificError.getErrorType()) {
+						case COOL_TIME_EXCEEDED:
+							Toast.makeText(SendMessageActivity.this, "cool time is exceeded. errorCode : " + apiSpecificError.getErrorCode() + ", errorMessage : " + message, Toast.LENGTH_SHORT).show();
+							break;
+						case GAME_QUOTA_EXCEEDED:
+							Toast.makeText(SendMessageActivity.this, "game quota is exceeded. errorCode : " + apiSpecificError.getErrorCode() + ", errorMessage : " + message, Toast.LENGTH_SHORT).show();
+							break;
+						default:
+							// default error handler
+							Toast.makeText(SendMessageActivity.this, "api specific error occurred. errorCode : " + apiSpecificError.getErrorCode() + ", errorMessage : " + message, Toast.LENGTH_SHORT).show();
+					}
 				}
 			});
 		}

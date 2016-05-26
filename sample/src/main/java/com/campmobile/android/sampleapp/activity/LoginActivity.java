@@ -1,7 +1,6 @@
 package com.campmobile.android.sampleapp.activity;
 
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,8 +17,6 @@ import com.campmobile.android.sampleapp.R;
 
 public class LoginActivity extends Activity {
 	private BandManager bandManager;
-	private ProgressDialog mProgressDialog;
-
 	private ImageButton loginImageButton;
 
 	@Override
@@ -44,11 +41,6 @@ public class LoginActivity extends Activity {
 
 	LoginCallbacks<AccessToken> onLoginApiCallbacks = new LoginCallbacks<AccessToken>() {
 		@Override
-		public void onPreExecute() {
-			mProgressDialog = ProgressDialog.show(LoginActivity.this, "", "Login process loading", true);
-		}
-
-		@Override
 		public void onResponse(AccessToken response) {
 			Toast.makeText(LoginActivity.this, "Login succeeded.", Toast.LENGTH_SHORT).show();
 			Intent intent = new Intent(LoginActivity.this, MainActivity.class);
@@ -64,13 +56,6 @@ public class LoginActivity extends Activity {
 		@Override
 		public void onCancel() {
 			Toast.makeText(LoginActivity.this, "Login canceled.", Toast.LENGTH_SHORT).show();
-		}
-
-		@Override
-		public void onPostExecute(boolean isSuccess) {
-			if (mProgressDialog != null && mProgressDialog.isShowing()) {
-				mProgressDialog.dismiss();
-			}
 		}
 	};
 }

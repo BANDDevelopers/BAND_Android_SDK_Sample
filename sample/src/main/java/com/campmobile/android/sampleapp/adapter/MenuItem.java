@@ -1,4 +1,4 @@
-package com.campmobile.android.sampleapp.CustomAdapter;
+package com.campmobile.android.sampleapp.adapter;
 
 import android.view.View;
 

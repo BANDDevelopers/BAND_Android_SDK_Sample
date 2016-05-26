@@ -28,8 +28,8 @@ import com.campmobile.android.bandsdk.entity.OfficialBand;
 import com.campmobile.android.bandsdk.entity.Quota;
 import com.campmobile.android.bandsdk.entity.QuotaType;
 import com.campmobile.android.bandsdk.entity.Quotas;
-import com.campmobile.android.sampleapp.CustomAdapter.MenuAdapter;
-import com.campmobile.android.sampleapp.CustomAdapter.MenuItem;
+import com.campmobile.android.sampleapp.adapter.MenuAdapter;
+import com.campmobile.android.sampleapp.adapter.MenuItem;
 import com.campmobile.android.sampleapp.R;
 import com.campmobile.android.sampleapp.SampleConstants;
 

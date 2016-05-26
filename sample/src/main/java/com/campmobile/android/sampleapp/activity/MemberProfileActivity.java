@@ -15,7 +15,7 @@ import com.campmobile.android.sampleapp.R;
 import com.campmobile.android.sampleapp.task.DownloadImageTask;
 
 public class MemberProfileActivity extends BaseToolbarActivity {
-	private BandManager bandManager = null;
+	private BandManager bandManager;
 	private ImageView profileImgae;
 	private TextView userTextView;
 

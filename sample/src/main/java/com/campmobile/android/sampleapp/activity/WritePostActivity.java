@@ -8,11 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.VolleyError;
 import com.campmobile.android.bandsdk.BandManager;
 import com.campmobile.android.bandsdk.BandManagerFactory;
 import com.campmobile.android.bandsdk.api.ApiCallbacks;
+import com.campmobile.android.bandsdk.constant.ApiSpecificError;
 import com.campmobile.android.bandsdk.entity.Band;
 import com.campmobile.android.sampleapp.R;
 import com.campmobile.android.sampleapp.SampleConstants;
@@ -98,6 +100,11 @@ public class WritePostActivity extends BaseToolbarActivity {
 			public void onError(VolleyError error) {
 				super.onError(error);
 				showMessage(error.getMessage());
+			}
+
+			@Override
+			public void onApiSpecificResponse(ApiSpecificError apiSpecificError, String message) {
+				Toast.makeText(WritePostActivity.this, "api specific error occurred. errorCode : " + apiSpecificError.getErrorCode() + ", errorMessage : " + message, Toast.LENGTH_SHORT).show();
 			}
 		});
 	}

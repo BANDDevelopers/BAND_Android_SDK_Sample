@@ -1,4 +1,4 @@
-package com.campmobile.android.sampleapp.CustomAdapter;
+package com.campmobile.android.sampleapp.adapter;
 
 import java.util.ArrayList;
 import java.util.List;
